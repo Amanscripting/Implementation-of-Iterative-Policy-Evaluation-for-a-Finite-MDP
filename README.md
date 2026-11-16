@@ -41,7 +41,7 @@ $$
 \pi(a|s) = \frac{1}{4}
 $$
 
-This probability refers to the policy's action-selection probability. The environment transition probabilities are obtained from Gymnasium using `env.P[state][action]`. If `is_slippery=True`, the agent may not move in the intended direction due to stochastic transitions.
+This probability refers to the policy's action-selection probability. The environment transition probabilities are obtained from Gymnasium using `env.P[state][action]`. If `is_slippery=True`, the agen[...] 
 
 The objective is to estimate the state-value function:
 
@@ -163,8 +163,8 @@ def policy_evaluation(env, policy, gamma=0.99, theta=1e-8):
 ```python
 V, iterations = policy_evaluation(env, policy, gamma, theta)
 
-print("Name: VENKATANATHAN P R")
-print("Register Number: 212223240173")
+print("Name: Aman Alam")
+print("Register Number: 212224240011")
 print("Number of iterations:", iterations)
 
 print("\nState-Value Function:")
@@ -243,8 +243,8 @@ def policy_evaluation(env, policy, gamma=0.99, theta=1e-8):
 ```python
 V, iterations = policy_evaluation(env, policy, gamma, theta)
 
-print("Name: VENKATANATHAN P R")
-print("Register Number: 212223240173")
+print("Name: Aman Alam")
+print("Register Number: 212224240011")
 print("Number of iterations:", iterations)
 
 print("\nState-Value Function:")
@@ -271,7 +271,7 @@ env.close()
 
 ## Result
 
-Iterative policy evaluation was implemented successfully using the Gymnasium FrozenLake environment. The state-value function for the fixed random policy was estimated using the Bellman expectation equation.
+Iterative policy evaluation was implemented successfully using the Gymnasium FrozenLake environment. The state-value function for the fixed random policy was estimated using the Bellman expectation equation and the values were visualized as a 4x4 grid.
 
 
 
