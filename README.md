@@ -3,7 +3,6 @@
 
 To implement iterative policy evaluation using Gymnasium and estimate the state-value function $V^\pi(s)$ for a fixed random policy.
 
-
 ## Software Requirements
 
 Install the required Python packages:
@@ -11,8 +10,6 @@ Install the required Python packages:
 ```bash
 pip install gymnasium numpy
 ```
-
-
 
 ## Environment Used
 
@@ -30,7 +27,6 @@ For the default 4 x 4 FrozenLake map:
 | Reward | +1 for reaching goal, 0 otherwise |
 | Terminal states | Goal and holes |
 
-
 ## Problem Statement
 
 Evaluate a fixed random policy in the FrozenLake-v1 environment.
@@ -41,15 +37,13 @@ $$
 \pi(a|s) = \frac{1}{4}
 $$
 
-This probability refers to the policy's action-selection probability. The environment transition probabilities are obtained from Gymnasium using `env.P[state][action]`. If `is_slippery=True`, the agen[...] 
+This probability refers to the policy's action-selection probability. The environment transition probabilities are obtained from Gymnasium using `env.P[state][action]`. If `is_slippery=True`, the agent may slip, and the transition model accounts for that randomness.
 
 The objective is to estimate the state-value function:
 
 $$
 V^\pi(s)
 $$
-
-
 
 ## Theory
 
@@ -79,7 +73,6 @@ Where:
 | $\gamma$ | Discount factor |
 | $V^\pi(s)$ | Value of state $s$ under policy $\pi$ |
 
-
 ## Algorithm
 
 1. Create the FrozenLake-v1 environment using Gymnasium.
@@ -92,8 +85,6 @@ Where:
      - Apply the Bellman expectation equation.
 6. Repeat until the value function converges.
 7. Display the final value function as a 4 x 4 grid.
-
-
 
 ## Program
 ### is_slippery=True
@@ -256,24 +247,20 @@ print(np.round(V.reshape(4, 4), 4))
 env.close()
 ```
 
-
 ## Output
 
-### is_slippery=True
-<img width="603" height="294" alt="image" src="https://github.com/user-attachments/assets/c764b99a-07e4-4519-aa61-a39bcc8fe9fd" />
+Run the corresponding program above to display the complete state-value function and iteration count for each environment setting. Both outputs identify the student as follows:
 
+```text
+Name: Aman Alam
+Register Number: 212224240011
+```
 
-
-### is_slippery=False
-
-<img width="621" height="300" alt="image" src="https://github.com/user-attachments/assets/3dbb8d60-1564-4ade-8343-5183e8e72292" />
-
+The state-value function and iteration count are computed by the program for each `is_slippery` setting.
 
 ## Result
 
 Iterative policy evaluation was implemented successfully using the Gymnasium FrozenLake environment. The state-value function for the fixed random policy was estimated using the Bellman expectation equation and the values were visualized as a 4x4 grid.
-
-
 
 ## Inference
 
