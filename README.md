@@ -255,10 +255,10 @@ Run the corresponding program above to display the complete state-value function
 Name: Aman Alam
 Register Number: 212224240011
 ```
-###is_slippery=True
+### is_slippery=True
 <img width="603" height="254" alt="image" src="https://github.com/user-attachments/assets/d48ce524-d221-4d5d-91fb-86f10918e18a" />
 
-###is_slippery=False
+### is_slippery=False
 <img width="621" height="262" alt="image" src="https://github.com/user-attachments/assets/4576a4d0-f466-4f60-b5ae-1576fd5892b9" />
 
 
